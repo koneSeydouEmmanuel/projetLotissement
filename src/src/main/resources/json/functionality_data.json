@@ -1,0 +1,294 @@
+{
+	"user": 1,
+	"datas": [
+		{
+			"code": "DEPLOIEMENT_ROBOT_SONDE",
+			"name": "DEPLOIEMENT_ROBOT_SONDE"
+		},
+		{
+			"code": "VIEW_DEPLOIEMENT_ROBOT_SONDE",
+			"parentCode": "DEPLOIEMENT_ROBOT_SONDE",
+			"name": "VIEW DEPLOIEMENT_ROBOT_SONDE"
+		},
+		{
+			"code": "CREATE_DEPLOIEMENT_ROBOT_SONDE",
+			"parentCode": "DEPLOIEMENT_ROBOT_SONDE",
+			"name": "CREATE DEPLOIEMENT_ROBOT_SONDE"
+		},
+		{
+			"code": "UPDATE_DEPLOIEMENT_ROBOT_SONDE",
+			"parentCode": "DEPLOIEMENT_ROBOT_SONDE",
+			"name": "UPDATE DEPLOIEMENT_ROBOT_SONDE"
+		},
+		{
+			"code": "DELETE_DEPLOIEMENT_ROBOT_SONDE",
+			"parentCode": "DEPLOIEMENT_ROBOT_SONDE",
+			"name": "DELETE DEPLOIEMENT_ROBOT_SONDE"
+		},
+		{
+			"code": "ENVIRONMENT_CONFIG",
+			"name": "ENVIRONMENT_CONFIG"
+		},
+		{
+			"code": "VIEW_ENVIRONMENT_CONFIG",
+			"parentCode": "ENVIRONMENT_CONFIG",
+			"name": "VIEW ENVIRONMENT_CONFIG"
+		},
+		{
+			"code": "CREATE_ENVIRONMENT_CONFIG",
+			"parentCode": "ENVIRONMENT_CONFIG",
+			"name": "CREATE ENVIRONMENT_CONFIG"
+		},
+		{
+			"code": "UPDATE_ENVIRONMENT_CONFIG",
+			"parentCode": "ENVIRONMENT_CONFIG",
+			"name": "UPDATE ENVIRONMENT_CONFIG"
+		},
+		{
+			"code": "DELETE_ENVIRONMENT_CONFIG",
+			"parentCode": "ENVIRONMENT_CONFIG",
+			"name": "DELETE ENVIRONMENT_CONFIG"
+		},
+		{
+			"code": "FONCTIONNALITE",
+			"name": "FONCTIONNALITE"
+		},
+		{
+			"code": "VIEW_FONCTIONNALITE",
+			"parentCode": "FONCTIONNALITE",
+			"name": "VIEW FONCTIONNALITE"
+		},
+		{
+			"code": "CREATE_FONCTIONNALITE",
+			"parentCode": "FONCTIONNALITE",
+			"name": "CREATE FONCTIONNALITE"
+		},
+		{
+			"code": "UPDATE_FONCTIONNALITE",
+			"parentCode": "FONCTIONNALITE",
+			"name": "UPDATE FONCTIONNALITE"
+		},
+		{
+			"code": "DELETE_FONCTIONNALITE",
+			"parentCode": "FONCTIONNALITE",
+			"name": "DELETE FONCTIONNALITE"
+		},
+		{
+			"code": "NRO",
+			"name": "NRO"
+		},
+		{
+			"code": "VIEW_NRO",
+			"parentCode": "NRO",
+			"name": "VIEW NRO"
+		},
+		{
+			"code": "CREATE_NRO",
+			"parentCode": "NRO",
+			"name": "CREATE NRO"
+		},
+		{
+			"code": "UPDATE_NRO",
+			"parentCode": "NRO",
+			"name": "UPDATE NRO"
+		},
+		{
+			"code": "DELETE_NRO",
+			"parentCode": "NRO",
+			"name": "DELETE NRO"
+		},
+		{
+			"code": "PROFIL",
+			"name": "PROFIL"
+		},
+		{
+			"code": "VIEW_PROFIL",
+			"parentCode": "PROFIL",
+			"name": "VIEW PROFIL"
+		},
+		{
+			"code": "CREATE_PROFIL",
+			"parentCode": "PROFIL",
+			"name": "CREATE PROFIL"
+		},
+		{
+			"code": "UPDATE_PROFIL",
+			"parentCode": "PROFIL",
+			"name": "UPDATE PROFIL"
+		},
+		{
+			"code": "DELETE_PROFIL",
+			"parentCode": "PROFIL",
+			"name": "DELETE PROFIL"
+		},
+		{
+			"code": "PROFIL_FONCTIONNALITE",
+			"name": "PROFIL_FONCTIONNALITE"
+		},
+		{
+			"code": "VIEW_PROFIL_FONCTIONNALITE",
+			"parentCode": "PROFIL_FONCTIONNALITE",
+			"name": "VIEW PROFIL_FONCTIONNALITE"
+		},
+		{
+			"code": "CREATE_PROFIL_FONCTIONNALITE",
+			"parentCode": "PROFIL_FONCTIONNALITE",
+			"name": "CREATE PROFIL_FONCTIONNALITE"
+		},
+		{
+			"code": "UPDATE_PROFIL_FONCTIONNALITE",
+			"parentCode": "PROFIL_FONCTIONNALITE",
+			"name": "UPDATE PROFIL_FONCTIONNALITE"
+		},
+		{
+			"code": "DELETE_PROFIL_FONCTIONNALITE",
+			"parentCode": "PROFIL_FONCTIONNALITE",
+			"name": "DELETE PROFIL_FONCTIONNALITE"
+		},
+		{
+			"code": "ROBOT",
+			"name": "ROBOT"
+		},
+		{
+			"code": "VIEW_ROBOT",
+			"parentCode": "ROBOT",
+			"name": "VIEW ROBOT"
+		},
+		{
+			"code": "CREATE_ROBOT",
+			"parentCode": "ROBOT",
+			"name": "CREATE ROBOT"
+		},
+		{
+			"code": "UPDATE_ROBOT",
+			"parentCode": "ROBOT",
+			"name": "UPDATE ROBOT"
+		},
+		{
+			"code": "DELETE_ROBOT",
+			"parentCode": "ROBOT",
+			"name": "DELETE ROBOT"
+		},
+		{
+			"code": "ROBOT_VERSION",
+			"name": "ROBOT_VERSION"
+		},
+		{
+			"code": "VIEW_ROBOT_VERSION",
+			"parentCode": "ROBOT_VERSION",
+			"name": "VIEW ROBOT_VERSION"
+		},
+		{
+			"code": "CREATE_ROBOT_VERSION",
+			"parentCode": "ROBOT_VERSION",
+			"name": "CREATE ROBOT_VERSION"
+		},
+		{
+			"code": "UPDATE_ROBOT_VERSION",
+			"parentCode": "ROBOT_VERSION",
+			"name": "UPDATE ROBOT_VERSION"
+		},
+		{
+			"code": "DELETE_ROBOT_VERSION",
+			"parentCode": "ROBOT_VERSION",
+			"name": "DELETE ROBOT_VERSION"
+		},
+		{
+			"code": "ROBOT_VERSION_FILES",
+			"name": "ROBOT_VERSION_FILES"
+		},
+		{
+			"code": "VIEW_ROBOT_VERSION_FILES",
+			"parentCode": "ROBOT_VERSION_FILES",
+			"name": "VIEW ROBOT_VERSION_FILES"
+		},
+		{
+			"code": "CREATE_ROBOT_VERSION_FILES",
+			"parentCode": "ROBOT_VERSION_FILES",
+			"name": "CREATE ROBOT_VERSION_FILES"
+		},
+		{
+			"code": "UPDATE_ROBOT_VERSION_FILES",
+			"parentCode": "ROBOT_VERSION_FILES",
+			"name": "UPDATE ROBOT_VERSION_FILES"
+		},
+		{
+			"code": "DELETE_ROBOT_VERSION_FILES",
+			"parentCode": "ROBOT_VERSION_FILES",
+			"name": "DELETE ROBOT_VERSION_FILES"
+		},
+		{
+			"code": "SONDE",
+			"name": "SONDE"
+		},
+		{
+			"code": "VIEW_SONDE",
+			"parentCode": "SONDE",
+			"name": "VIEW SONDE"
+		},
+		{
+			"code": "CREATE_SONDE",
+			"parentCode": "SONDE",
+			"name": "CREATE SONDE"
+		},
+		{
+			"code": "UPDATE_SONDE",
+			"parentCode": "SONDE",
+			"name": "UPDATE SONDE"
+		},
+		{
+			"code": "DELETE_SONDE",
+			"parentCode": "SONDE",
+			"name": "DELETE SONDE"
+		},
+		{
+			"code": "STATUT",
+			"name": "STATUT"
+		},
+		{
+			"code": "VIEW_STATUT",
+			"parentCode": "STATUT",
+			"name": "VIEW STATUT"
+		},
+		{
+			"code": "CREATE_STATUT",
+			"parentCode": "STATUT",
+			"name": "CREATE STATUT"
+		},
+		{
+			"code": "UPDATE_STATUT",
+			"parentCode": "STATUT",
+			"name": "UPDATE STATUT"
+		},
+		{
+			"code": "DELETE_STATUT",
+			"parentCode": "STATUT",
+			"name": "DELETE STATUT"
+		},
+		{
+			"code": "USER",
+			"name": "USER"
+		},
+		{
+			"code": "VIEW_USER",
+			"parentCode": "USER",
+			"name": "VIEW USER"
+		},
+		{
+			"code": "CREATE_USER",
+			"parentCode": "USER",
+			"name": "CREATE USER"
+		},
+		{
+			"code": "UPDATE_USER",
+			"parentCode": "USER",
+			"name": "UPDATE USER"
+		},
+		{
+			"code": "DELETE_USER",
+			"parentCode": "USER",
+			"name": "DELETE USER"
+		}
+
+	]
+}

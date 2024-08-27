@@ -1,0 +1,1593 @@
+
+{
+
+    "info": {
+        "_postman_id": "df67b7b8-9986-4f5f-836e-e0af58c8e968",
+        "name": "com_orange_sonde_qoe",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+		{
+			"name": "deploiementRobotSonde",
+			"item": [
+                {
+					"name": "deploiementRobotSonde.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"sondeId\": \"\",\n\t\t\t\"robotVersionId\": \"\",\n\t\t\t\"cron\": \"\",\n\t\t\t\"dateDeploiement\": \"\",\n\t\t\t\"comment\": \"\",\n\t\t\t\"status\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/deploiementRobotSonde/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"deploiementRobotSonde",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "deploiementRobotSonde.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"sondeId\": \"\",\n\t\t\t\"robotVersionId\": \"\",\n\t\t\t\"cron\": \"\",\n\t\t\t\"dateDeploiement\": \"\",\n\t\t\t\"comment\": \"\",\n\t\t\t\"status\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/deploiementRobotSonde/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "deploiementRobotSonde",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "deploiementRobotSonde.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/deploiementRobotSonde/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "deploiementRobotSonde",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "deploiementRobotSonde.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"sondeId\": \"\",\n\t\t\"robotVersionId\": \"\",\n\t\t\"cron\": \"\",\n\t\t\"dateDeploiement\": \"\",\n\t\t\"comment\": \"\",\n\t\t\"status\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/deploiementRobotSonde/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "deploiementRobotSonde",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "environmentConfig",
+			"item": [
+                {
+					"name": "environmentConfig.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"libelle\": \"\",\n\t\t\t\"description\": \"\",\n\t\t\t\"ip\": \"\",\n\t\t\t\"port\": \"\",\n\t\t\t\"endPoint\": \"\",\n\t\t\t\"robotBinPath\": \"\",\n\t\t\t\"pathDirectory\": \"\",\n\t\t\t\"outputDirectoryPath\": \"\",\n\t\t\t\"isWindowsOs\": \"\",\n\t\t\t\"env\": \"\",\n\t\t\t\"isEnabled\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/environmentConfig/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"environmentConfig",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "environmentConfig.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"libelle\": \"\",\n\t\t\t\"description\": \"\",\n\t\t\t\"ip\": \"\",\n\t\t\t\"port\": \"\",\n\t\t\t\"endPoint\": \"\",\n\t\t\t\"robotBinPath\": \"\",\n\t\t\t\"pathDirectory\": \"\",\n\t\t\t\"outputDirectoryPath\": \"\",\n\t\t\t\"isWindowsOs\": \"\",\n\t\t\t\"env\": \"\",\n\t\t\t\"isEnabled\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/environmentConfig/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "environmentConfig",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "environmentConfig.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/environmentConfig/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "environmentConfig",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "environmentConfig.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"libelle\": \"\",\n\t\t\"description\": \"\",\n\t\t\"ip\": \"\",\n\t\t\"port\": \"\",\n\t\t\"endPoint\": \"\",\n\t\t\"robotBinPath\": \"\",\n\t\t\"pathDirectory\": \"\",\n\t\t\"outputDirectoryPath\": \"\",\n\t\t\"isWindowsOs\": \"\",\n\t\t\"createdAt\": \"\",\n\t\t\"updatedAt\": \"\",\n\t\t\"createdBy\": \"\",\n\t\t\"updatedBy\": \"\",\n\t\t\"isDeleted\": \"\",\n\t\t\"env\": \"\",\n\t\t\"isEnabled\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/environmentConfig/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "environmentConfig",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "executionEnvironment",
+			"item": [
+                {
+					"name": "executionEnvironment.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"key\": \"\",\n\t\t\t\"value\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"parameterTypeId\": \"\",\n\t\t\t\"repository\": \"\",\n\t\t\t\"fileName\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/executionEnvironment/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"executionEnvironment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "executionEnvironment.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"key\": \"\",\n\t\t\t\"value\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"parameterTypeId\": \"\",\n\t\t\t\"repository\": \"\",\n\t\t\t\"fileName\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/executionEnvironment/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "executionEnvironment",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "executionEnvironment.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/executionEnvironment/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "executionEnvironment",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "executionEnvironment.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"key\": \"\",\n\t\t\"value\": \"\",\n\t\t\"robotId\": \"\",\n\t\t\"createdAt\": \"\",\n\t\t\"updatedAt\": \"\",\n\t\t\"isDeleted\": \"\",\n\t\t\"parameterTypeId\": \"\",\n\t\t\"repository\": \"\",\n\t\t\"fileName\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/executionEnvironment/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "executionEnvironment",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "parameterType",
+			"item": [
+                {
+					"name": "parameterType.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"code\": \"\",\n\t\t\t\"libelle\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/parameterType/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"parameterType",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "parameterType.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"code\": \"\",\n\t\t\t\"libelle\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/parameterType/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "parameterType",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "parameterType.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/parameterType/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "parameterType",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "parameterType.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"code\": \"\",\n\t\t\"libelle\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/parameterType/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "parameterType",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "robot",
+			"item": [
+                {
+					"name": "robot.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"name\": \"\",\n\t\t\t\"description\": \"\",\n\t\t\t\"body\": \"\",\n\t\t\t\"latestVersion\": \"\",\n\t\t\t\"statutId\": \"\",\n\t\t\t\"isEnabled\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/robot/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"robot",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "robot.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"name\": \"\",\n\t\t\t\"description\": \"\",\n\t\t\t\"body\": \"\",\n\t\t\t\"latestVersion\": \"\",\n\t\t\t\"statutId\": \"\",\n\t\t\t\"isEnabled\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/robot/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "robot",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "robot.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/robot/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "robot",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "robot.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"name\": \"\",\n\t\t\"description\": \"\",\n\t\t\"body\": \"\",\n\t\t\"createdAt\": \"\",\n\t\t\"updatedAt\": \"\",\n\t\t\"isDeleted\": \"\",\n\t\t\"latestVersion\": \"\",\n\t\t\"statutId\": \"\",\n\t\t\"isEnabled\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/robot/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "robot",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "robotEnvironment",
+			"item": [
+                {
+					"name": "robotEnvironment.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"robotId\": \"\",\n\t\t\t\"environmentId\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/robotEnvironment/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"robotEnvironment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "robotEnvironment.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"environmentId\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/robotEnvironment/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "robotEnvironment",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "robotEnvironment.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/robotEnvironment/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "robotEnvironment",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "robotEnvironment.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"robotId\": \"\",\n\t\t\"environmentId\": \"\",\n\t\t\"createdAt\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/robotEnvironment/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "robotEnvironment",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "robotVersion",
+			"item": [
+                {
+					"name": "robotVersion.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"robotId\": \"\",\n\t\t\t\"version\": \"\",\n\t\t\t\"used\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/robotVersion/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"robotVersion",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "robotVersion.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"version\": \"\",\n\t\t\t\"used\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/robotVersion/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "robotVersion",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "robotVersion.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/robotVersion/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "robotVersion",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "robotVersion.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"robotId\": \"\",\n\t\t\"version\": \"\",\n\t\t\"used\": \"\",\n\t\t\"createdAt\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/robotVersion/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "robotVersion",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "robotVersionFiles",
+			"item": [
+                {
+					"name": "robotVersionFiles.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"robotVersionId\": \"\",\n\t\t\t\"fileName\": \"\",\n\t\t\t\"extension\": \"\",\n\t\t\t\"used\": \"\",\n\t\t\t\"content\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/robotVersionFiles/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"robotVersionFiles",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "robotVersionFiles.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"robotVersionId\": \"\",\n\t\t\t\"fileName\": \"\",\n\t\t\t\"extension\": \"\",\n\t\t\t\"used\": \"\",\n\t\t\t\"content\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/robotVersionFiles/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "robotVersionFiles",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "robotVersionFiles.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/robotVersionFiles/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "robotVersionFiles",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "robotVersionFiles.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"robotVersionId\": \"\",\n\t\t\"fileName\": \"\",\n\t\t\"extension\": \"\",\n\t\t\"used\": \"\",\n\t\t\"content\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/robotVersionFiles/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "robotVersionFiles",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "scheduler",
+			"item": [
+                {
+					"name": "scheduler.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"robotId\": \"\",\n\t\t\t\"cron\": \"\",\n\t\t\t\"startDate\": \"\",\n\t\t\t\"endDate\": \"\",\n\t\t\t\"nbreOccurences\": \"\",\n\t\t\t\"dateExecution\": \"\",\n\t\t\t\"statutId\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/scheduler/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"scheduler",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "scheduler.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"cron\": \"\",\n\t\t\t\"startDate\": \"\",\n\t\t\t\"endDate\": \"\",\n\t\t\t\"nbreOccurences\": \"\",\n\t\t\t\"dateExecution\": \"\",\n\t\t\t\"statutId\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/scheduler/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "scheduler",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "scheduler.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/scheduler/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "scheduler",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "scheduler.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"robotId\": \"\",\n\t\t\"cron\": \"\",\n\t\t\"startDate\": \"\",\n\t\t\"endDate\": \"\",\n\t\t\"nbreOccurences\": \"\",\n\t\t\"dateExecution\": \"\",\n\t\t\"statutId\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/scheduler/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "scheduler",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "sonde",
+			"item": [
+                {
+					"name": "sonde.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"configId\": \"\",\n\t\t\t\"name\": \"\",\n\t\t\t\"ipAddress\": \"\",\n\t\t\t\"osName\": \"\",\n\t\t\t\"localisation\": \"\",\n\t\t\t\"lng\": \"\",\n\t\t\t\"lat\": \"\",\n\t\t\t\"dateMiseService\": \"\",\n\t\t\t\"disabled\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/sonde/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"sonde",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "sonde.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"configId\": \"\",\n\t\t\t\"name\": \"\",\n\t\t\t\"ipAddress\": \"\",\n\t\t\t\"osName\": \"\",\n\t\t\t\"localisation\": \"\",\n\t\t\t\"lng\": \"\",\n\t\t\t\"lat\": \"\",\n\t\t\t\"dateMiseService\": \"\",\n\t\t\t\"disabled\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/sonde/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "sonde",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "sonde.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/sonde/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "sonde",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "sonde.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"configId\": \"\",\n\t\t\"name\": \"\",\n\t\t\"ipAddress\": \"\",\n\t\t\"osName\": \"\",\n\t\t\"localisation\": \"\",\n\t\t\"lng\": \"\",\n\t\t\"lat\": \"\",\n\t\t\"dateMiseService\": \"\",\n\t\t\"disabled\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/sonde/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "sonde",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "statut",
+			"item": [
+                {
+					"name": "statut.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"code\": \"\",\n\t\t\t\"libelle\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/statut/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"statut",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "statut.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"code\": \"\",\n\t\t\t\"libelle\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/statut/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "statut",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "statut.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/statut/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "statut",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "statut.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"code\": \"\",\n\t\t\"libelle\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/statut/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "statut",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "task",
+			"item": [
+                {
+					"name": "task.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"startDate\": \"\",\n\t\t\t\"endDate\": \"\",\n\t\t\t\"statutId\": \"\",\n\t\t\t\"recordPath\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"outputFilePath\": \"\",\n\t\t\t\"logFilePath\": \"\",\n\t\t\t\"reportFilePath\": \"\",\n\t\t\t\"tasksCount\": \"\",\n\t\t\t\"tasksPassed\": \"\",\n\t\t\t\"tasksFailed\": \"\",\n\t\t\t\"schedulerId\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/task/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"task",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "task.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"startDate\": \"\",\n\t\t\t\"endDate\": \"\",\n\t\t\t\"statutId\": \"\",\n\t\t\t\"recordPath\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"outputFilePath\": \"\",\n\t\t\t\"logFilePath\": \"\",\n\t\t\t\"reportFilePath\": \"\",\n\t\t\t\"tasksCount\": \"\",\n\t\t\t\"tasksPassed\": \"\",\n\t\t\t\"tasksFailed\": \"\",\n\t\t\t\"schedulerId\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/task/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "task",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "task.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/task/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "task",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "task.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"startDate\": \"\",\n\t\t\"endDate\": \"\",\n\t\t\"statutId\": \"\",\n\t\t\"recordPath\": \"\",\n\t\t\"robotId\": \"\",\n\t\t\"outputFilePath\": \"\",\n\t\t\"logFilePath\": \"\",\n\t\t\"reportFilePath\": \"\",\n\t\t\"tasksCount\": \"\",\n\t\t\"tasksPassed\": \"\",\n\t\t\"tasksFailed\": \"\",\n\t\t\"schedulerId\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/task/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "task",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "taskStep",
+			"item": [
+                {
+					"name": "taskStep.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"startDate\": \"\",\n\t\t\t\"endDate\": \"\",\n\t\t\t\"taskId\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"statutId\": \"\",\n\t\t\t\"libelleStep\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/taskStep/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"taskStep",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "taskStep.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"startDate\": \"\",\n\t\t\t\"endDate\": \"\",\n\t\t\t\"taskId\": \"\",\n\t\t\t\"robotId\": \"\",\n\t\t\t\"statutId\": \"\",\n\t\t\t\"libelleStep\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/taskStep/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "taskStep",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "taskStep.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/taskStep/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "taskStep",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "taskStep.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"startDate\": \"\",\n\t\t\"endDate\": \"\",\n\t\t\"taskId\": \"\",\n\t\t\"robotId\": \"\",\n\t\t\"statutId\": \"\",\n\t\t\"libelleStep\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/taskStep/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "taskStep",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+                {
+					"name": "user.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"login\": \"\",\n\t\t\t\"password\": \"\"\n\t\t} \n\t]  \n}"
+						},
+						"url": {
+							"raw": "{{appUrl}}/user/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "user.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\",\n\t\t\t\"login\": \"\",\n\t\t\t\"password\": \"\"\n\t\t} \n\t]  \n}"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/user/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "user",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "user.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{\n\t\"user\":\"1\",\n\t\"datas\":[\n\t\t{\n  \t\t\t\"id\": \"\"\n\t\t} \n\t]  \n}"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/user/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "user",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "user.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{\n\t\"user\":\"1\",\n\t\"isSimpleLoading\":false,\n\t\"data\":{\n  \t\t\"id\": \"\",\n\t\t\"login\": \"\",\n\t\t\"password\": \"\",\n\t\t\"isDeleted\": \"\"\n\t}  \n}"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/user/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "user",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		}
+    ]
+}

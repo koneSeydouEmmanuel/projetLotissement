@@ -1,0 +1,82 @@
+{
+  "settings": {
+    "index": {
+      "max_result_window": "100000000",
+      "max_terms_count"  : "1000000000",
+      "number_of_shards": "1",
+      "number_of_replicas": "0"
+    }
+  },
+  "aliases": {
+  },
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "login": {
+        "type": "keyword"
+      },
+      "application": {
+        "type": "keyword"
+      },
+      "libelle": {
+        "type": "keyword"
+      },
+      "serviceLibelle": {
+        "type": "keyword"
+      },
+      "action": {
+        "type": "keyword"
+      },
+      "nom": {
+        "type": "keyword"
+      },
+      "prenom": {
+        "type": "keyword"
+      },
+      "userId": {
+        "type": "keyword"
+      },
+      "remoteAddr": {
+        "type": "keyword"
+      },
+      "request": {
+        "type": "keyword"
+      },
+      "response": {
+        "type": "text"
+      },
+      "responseDate": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+      },
+      "createdAt": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+      },
+      "hasError": {
+        "type": "boolean"
+      },
+      "day": {
+        "type": "date",
+        "format": "yyyy-MM-dd"
+      },
+      "month": {
+        "type": "date",
+        "format": "yyyy-MM"
+      },
+      "year": {
+        "type": "date",
+        "format": "yyyy"
+      },
+      "week": {
+        "type": "keyword"
+      }
+    }
+  }
+}

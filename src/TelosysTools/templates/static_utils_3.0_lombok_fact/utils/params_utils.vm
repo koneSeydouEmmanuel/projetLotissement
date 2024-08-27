@@ -1,0 +1,131 @@
+
+/*
+ * Created on $today.date ( Time $today.time )
+ * Generator tool : $generator.name ( version $generator.version )
+ * Copyright 2018 Geo. All Rights Reserved.
+ */
+
+package ${target.javaPackageFromFolder(${SRC})};
+
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import org.apache.commons.lang3.BooleanUtils;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+/**
+ * Params Utils
+ *
+ * @author Geo
+ */
+
+@Component
+@Getter
+@NoArgsConstructor
+@ToString
+public class ParamsUtils {
+
+    @Value("${use.radius.rapprochement:true}")
+    private String  radiusRapprochement;
+
+    @Value("${is-debug:true}")
+    private String  debug;
+    @Value("${disable-all.notification.api:true}")
+    private String  disableAllNotificationApi;
+    //    @Value("${jwt.header}")
+//    private String  tokenHeader;
+//    @Value("${jwt.secret}")
+//    private String  secret;
+//    @Value("${jwt.bearer}")
+//    private String  bearer;
+    @Value("${smtp.mail.host:smtp.gmail.com}")
+    private String  smtpHost;
+    @Value("${smtp.mail.port:587}")
+    private Integer smtpPort;
+    @Value("${smtp.mail.from:sfl.backend@gmail.com}")
+    private String  smtpMailFrom;
+    @Value("${smtp.mail.login:djog.farfar@gmail.com}")
+    private String  smtpLogin;
+    @Value("${smtp.mail.password:@2020VdosFar}")
+    private String  smtpPassword;
+    @Value("${smtp.mail.username:apikey}")
+    private String  smtpMailAdresse;
+    // @Value("${monitor.app.url}")
+    // private String  monitorAppUrl;
+
+    //Urls
+    @Value("${url.root:localhost:8080}")
+    private String  rootFilesUrl;
+    @Value("${path.root:/tmp}")
+    private String  rootFilesPath;
+    //    @Value("${url.root.office.front}")
+//    private String frontOfficeRootUrl;
+//    @Value("${url.root.office.back}")
+//    private String backOfficeRootUrl;
+//    @Value("${template.email.test}")
+//    private String testEmailTemplate;
+//
+////	@Value("${files.directory.report}")
+////	private String  filesDirectoryReport;
+//
+//
+//    //Emails templates
+//    @Value("${template.email.welcome}")
+//    private String welcomeEmailTemplate;
+//    @Value("${template.email.reset.forgotten.user.password}")
+//    private String resetForgottenUserPasswordEmailTemplate;
+//    @Value("${template.email.reset.password.succes}")
+//    private String resetPasswordSuccesEmailTemplate;
+//    @Value("${template.email.notification.modification.compte}")
+//    private String notificationModificationCompteEmailTemplate;
+//    @Value("${textfile.directory}")
+//    private String textfileDirectory;
+//
+//
+    //Files location
+    @Value("${image.directory:files/}")
+    private String  imageDirectory;
+    @Value("${video.directory:files/}")
+    private String  videoDirectory;
+    @Value("${otherfile.directory:files/}")
+    private String  otherfileDirectory;
+    @Value("${tmp.directory:/tmp}")
+    private String  tmpDirectory;
+    @Value("${office.excel.max.line.number:10000}")
+    private Integer excelMaxLineNumber;
+
+
+    @Value("${url.admin}")
+    private String urlAdmin;
+
+/*
+    @Value("${sms.url}")
+    private String smsUrl;
+    @Value("${sms.sender}")
+    private String smsSender;
+    @Value("${sms.duration.otp}")
+    private String smsDurationOtp;
+    @Value("${sms.length.otp}")
+    private String smsLengthOtp;
+    @Value("${sms.random}")
+    private String smsRandom;
+*/
+
+//    //Others value
+//    @Value("${drools.ksession.log.file}")
+//    private String kSessionLogFile;
+//
+//    public boolean isDebug() {
+//        return BooleanUtils.toBoolean(debug);
+//    }
+//
+//    public boolean isAllNotificationApiDisabled() {
+//        return BooleanUtils.toBoolean(disableAllNotificationApi);
+//    }
+
+    public boolean useRadiusRapprochement() {
+        return BooleanUtils.toBoolean(radiusRapprochement);
+    }
+}

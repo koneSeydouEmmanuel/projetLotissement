@@ -1,0 +1,85 @@
+{
+  "settings": {
+    "index": {
+      "max_result_window": "100000000"
+    }
+  },
+  "aliases": {},
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "dateDebutExecution": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+      },
+      "dateFinExecution": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+      },
+      "dateProchaineExecution": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+      },
+      "idRobot": {
+        "type": "keyword"
+      },
+      "versionRobot": {
+        "type": "keyword"
+      },
+      "libRobot": {
+        "type": "keyword"
+      },
+      "scenario": {
+        "type": "keyword"
+      },
+      "scenarioCode": {
+        "type": "keyword"
+      },
+      "idSonde": {
+        "type": "keyword"
+      },
+      "description": {
+        "type": "keyword"
+      },
+      "hasError": {
+        "type": "keyword"
+      },
+      "libelle": {
+        "type": "keyword"
+      },
+      "keyReference": {
+        "type": "keyword"
+      },
+      "value": {
+        "type": "float"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "minValueReference": {
+        "type": "float"
+      },
+      "maxValueReference": {
+        "type": "float"
+      },
+      "unite": {
+        "type": "keyword"
+      },
+      "percentEchec": {
+        "type": "float"
+      },
+      "percentSucces": {
+        "type": "float"
+      },
+      "statusTest": {
+        "type": "keyword"
+      }
+    }
+  }
+}

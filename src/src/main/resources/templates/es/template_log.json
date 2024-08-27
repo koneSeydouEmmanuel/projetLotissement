@@ -1,0 +1,118 @@
+{
+  "settings" : {
+    "index" : {
+      "max_result_window" : "100000000",
+      "number_of_shards" : "1",
+      "number_of_replicas" : "0"
+    }
+  },
+  "index_patterns": [
+    "otest_debit_log-*"
+  ],
+  "template" : "otest_debit_log-*",
+  "aliases" : { },
+  "mappings" : {
+    "properties" : {
+      "@timestamp" : {
+        "type" : "date"
+      },
+      "action" : {
+        "type" : "keyword"
+      },
+      "canShow" : {
+        "type" : "boolean"
+      },
+      "connectedUserFullName" : {
+        "type" : "keyword"
+      },
+      "connectedUserLogin" : {
+        "type" : "keyword"
+      },
+      "customer" : {
+        "type" : "keyword"
+      },
+      "hasError" : {
+        "type" : "boolean"
+      },
+      "host" : {
+        "type" : "keyword"
+      },
+      "logType" : {
+        "type" : "keyword"
+      },
+      "loggedAt" : {
+        "type" : "date",
+        "format" : "dd/MM/yyyy HH:mm:ss"
+      },
+      "logger" : {
+        "type" : "keyword"
+      },
+      "message" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          }
+        }
+      },
+      "nd" : {
+        "type" : "keyword"
+      },
+      "protocol" : {
+        "type" : "keyword"
+      },
+      "remoteAddr" : {
+        "type" : "keyword"
+      },
+      "requestIdentifier" : {
+        "type" : "keyword"
+      },
+      "requestValue" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          }
+        }
+      },
+      "responseValue" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          }
+        }
+      },
+      "sessionUser" : {
+        "type" : "keyword"
+      },
+      "severity" : {
+        "type" : "keyword"
+      },
+      "stacktrace" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          }
+        }
+      },
+      "thread" : {
+        "type" : "keyword"
+      },
+      "uri" : {
+        "type" : "keyword"
+      },
+      "userAgent" : {
+        "type" : "keyword"
+      },
+      "numero" : {
+        "type" : "keyword"
+      }
+    }
+  }
+}

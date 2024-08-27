@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databases defaultId="1" maxId="10">
+    <db dialect="org.hibernate.dialect.MySQLDialect" driver="com.mysql.cj.jdbc.Driver" id="0" isolationLevel="" name="ilot_db" poolSize="1" typeName="MYSQL" url="jdbc:mysql://127.0.0.1:3306/ilot_db">
+        <property name="user" value="kone"/>
+        <property name="password" value="password"/>
+        <metadata catalog="ilot_db" schema="ilot_db" table-name-exclude="" table-name-include="" table-name-pattern="%" table-types="TABLE"/>
+    </db>
+    <db dialect="org.hibernate.dialect.MySQLDialect" driver="com.mysql.jdbc.Driver" id="1" isolationLevel="" name="MYSQL_sonde_prod" poolSize="1" typeName="MYSQL" url="jdbc:mysql://172.18.2.233:3306/sonde-qoe_db">
+        <property name="user" value="sonde-qoe"/>
+        <property name="password" value="IRB8pMA1o3JASn0MN"/>
+        <metadata catalog="sonde-qoe_db" schema="sonde-qoe_db" table-name-exclude="" table-name-include="" table-name-pattern="%" table-types="TABLE"/>
+    </db>
+</databases>

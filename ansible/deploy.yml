@@ -1,0 +1,13 @@
+---
+  
+- hosts: all
+  become: false
+  serial: 1
+  tasks:
+    - name: Copy project WAR
+      copy:
+        src:   "{{ target_dir }}/{{ war_file }}"
+        dest:  /var/tmp/{{ war_file }}
+        
+    - name: Move new WAR file to project directory
+      shell: sudo /usr/local/sbin/tomcat-app-deploy -f /var/tmp/{{ war_file }}
