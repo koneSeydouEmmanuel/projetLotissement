@@ -99,3 +99,4 @@ le `*` étant un wildcard, il vous permet d'ajouter ce que vous voulez comme num
 
 Les sources du projet sont à déposer dans le repertoire **src**
 
+# projetLotissement
